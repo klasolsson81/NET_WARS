@@ -17,5 +17,11 @@
             Console.WriteLine($"{Name} har tagit {damage} skada och har nu {Health} HP kvar.");
         }
 
+        // Gör Attack-metoden virtual så att den kan överskuggas av subklasser
+        public virtual void Attack()
+        {
+            Console.WriteLine($"{Name} utför en grundläggande attack.");
+        }
+
     }
 }

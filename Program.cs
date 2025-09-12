@@ -30,7 +30,22 @@
 
             //Nu ska jag meddela att en ny fiende har dykt upp från Enemy klassen (ARV)
             Console.WriteLine($"En ny fiende har dykt upp! Det är en {heavySoldier.EnemyType} vid namn {heavySoldier.Name} med {heavySoldier.Health} HP och {heavySoldier.AttackPower} i attackstyrka!");
+
+            //Nu ska jag göra en tredje klass med polymorfism som heter Player
+            //Skapa en ny spelare
+            Player warrior = new Player();
+            warrior.Name = "Aragorn";
+            warrior.Health = 150;
+            warrior.AttackPower = 30;
             
+            //Anropa Attack-metoden för både fienden och spelaren för att visa polymorfism
+            heavySoldier.Attack();
+            warrior.Attack();
+
+            //Nu ska jag skapa en fjärde klass med Abstraktion som heter Inventory
+
+
+
         }
     }
 }
