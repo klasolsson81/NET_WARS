@@ -21,7 +21,7 @@
             hero.AttackPower = 20;
             hero.Damage(30);
 
-            //Nästa klass är Enemy som ärver från Characters
+            //Nästa klass är Enemy som ärver (ARV) från Characters
             //Nu lägger jag till en ny fiende
             Enemy heavySoldier = new Enemy();
             heavySoldier.Name = "Behemoth";
@@ -44,12 +44,14 @@
             warrior.Attack();
 
             //Nu ska jag skapa en fjärde klass med Abstraktion som heter Inventory
+            
 
             //Skapar en sista klass med Inkapsling som heter Login
 
             //Lägger till användarnamn och lösenord
             Login userLogin = new Login();
             userLogin.SetCredentials("playerOne", "Hemligtpassword123");
+            
             //Lägger till en metod för att hämta användarnamn
             Console.WriteLine($"Inloggad som: {userLogin.GetUsername()}");
 
