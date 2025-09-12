@@ -13,6 +13,7 @@
             //* Inkapsling
             //* Abstraktion
 
+            //Jag skapar min första klass som heter Characters. Denna har ingen specifik OOP-princip.
             // Nu ska jag anropa min första klass som heter Characters
             Characters hero = new Characters();
             hero.Name = "The Beast";
@@ -44,6 +45,7 @@
 
             //Nu ska jag skapa en fjärde klass med Abstraktion som heter Inventory
 
+            //Skapar en sista klass med Inkapsling som heter Login
 
 
         }
