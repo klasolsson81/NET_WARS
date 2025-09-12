@@ -47,6 +47,12 @@
 
             //Skapar en sista klass med Inkapsling som heter Login
 
+            //Lägger till användarnamn och lösenord
+            Login userLogin = new Login();
+            userLogin.SetCredentials("playerOne", "Hemligtpassword123");
+            //Lägger till en metod för att hämta användarnamn
+            Console.WriteLine($"Inloggad som: {userLogin.GetUsername()}");
+
 
         }
     }
