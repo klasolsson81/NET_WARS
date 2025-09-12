@@ -1,6 +1,6 @@
 ﻿namespace NET_WARS
 {
-    internal class Characters
+    public class Characters
     {
         //Här skapar jag en klass som heter Characters
         //Klasser innehåller egenskaper och metoder

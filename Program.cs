@@ -21,8 +21,16 @@
             hero.Damage(30);
 
             //Nästa klass är Enemy som ärver från Characters
+            //Nu lägger jag till en ny fiende
+            Enemy heavySoldier = new Enemy();
+            heavySoldier.Name = "Behemoth";
+            heavySoldier.Health = 250;
+            heavySoldier.AttackPower = 40;
+            heavySoldier.EnemyType = "Juggernaut";
 
-
+            //Nu ska jag meddela att en ny fiende har dykt upp från Enemy klassen (ARV)
+            Console.WriteLine($"En ny fiende har dykt upp! Det är en {heavySoldier.EnemyType} vid namn {heavySoldier.Name} med {heavySoldier.Health} HP och {heavySoldier.AttackPower} i attackstyrka!");
+            
         }
     }
 }
