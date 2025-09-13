@@ -33,6 +33,9 @@
             Console.WriteLine($"En ny fiende har dykt upp! Det är en {heavySoldier.EnemyType} vid namn {heavySoldier.Name} med {heavySoldier.Health} HP och {heavySoldier.AttackPower} i attackstyrka!");
 
             //Nu ska jag göra en tredje klass med polymorfism som heter Player
+            //Jag lägger till Virtual i Characters klassen för Attack-metoden, samt Override i både Enemy och Player klasserna
+
+
             //Skapa en ny spelare
             Player warrior = new Player();
             warrior.Name = "Aragorn";
@@ -44,7 +47,10 @@
             warrior.Attack();
 
             //Nu ska jag skapa en fjärde klass med Abstraktion som heter Inventory
-            
+            //Visar hur många slots en SmallBag har
+            SmallBag myBag = new SmallBag();
+            myBag.DisplaySlots();
+
 
             //Skapar en sista klass med Inkapsling som heter Login
 
